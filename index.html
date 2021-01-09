@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COM ADMIN</title>
+    <link rel="stylesheet" href="vendor/bootstrap-4.1/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="vendor/mdi-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    
+    <!-- ================== Page Wrapper ======================== -->
+    <div id="wrapper">
+        <!-- ================== SideBar Start ======================== -->
+        <ul class="navbar-nav">
+            <a class="navbar-brand w-100 main-shadow d-flex align-items-center justify-content-center" href="index.html">
+                <!-- <div class="navbar-brand-icon">
+                    <i class="fas mr-2 fa-laugh-wink"></i>
+                    COM ADMIN
+                </div> -->
+                <img class="img-fluid" src="images/icon/logo.png" />
+            </a>
+            <div class="navbar-link-wrapper js-scrollbar1 ps ps--active-y">
+                <li class="navbar-item active">
+                    <a href="index.html">
+                        <i class="mr-2 fas fa-tachometer-alt"></i>
+                        Dashboard
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="chart.html">
+                        <i class="mr-2 fas fa-chart-bar"></i>
+                        Chart
+                    </a>
+                </li>
+                <li class="navbar-item">
+                    <a href="chart.html">
+                        <i class="mr-2 fas fa-chart-bar"></i>
+                        Tables
+                    </a>
+                </li>
+            </div>
+        </ul>
+        <!-- ================== SideBar End ======================== -->
+        <!-- ================== Main End ======================== -->
+        <main>
+            <!-- ================== Header End ======================== -->
+            <header class="main-shadow">
+                <div class="header-container d-flex align-items-center justify-content-between">
+                    <form action="index.html" class="search-form d-flex">
+                        <input type="text" placeholder="Search for datas & reports..." class="form-control">
+                        <button class="btn">
+                            <i class="zmdi zmdi-search"></i>
+                        </button>
+                    </form>
+                    <div class="header-button d-flex align-items-center">
+                        <div class="noti-wrap">
+                            <button class="btn btn-none">
+                                <i class="zmdi zmdi-comment-more"></i>
+                                <span class="noti_quantity">2</span>
+                            </button>
+                        </div>
+                        <div class="noti-wrap">
+                            <button class="btn btn-none">
+                                <i class="zmdi zmdi-email"></i>
+                                <span class="noti_quantity">2</span>
+                            </button>
+                        </div>
+                        <div class="noti-wrap">
+                            <button class="btn btn-none">
+                                <i class="zmdi zmdi-notifications"></i>
+                                <span class="noti_quantity">2</span>
+                            </button>
+                        </div>
+                        <div class="account-wrap ml-4 d-flex align-items-center">
+                            <div class="account-img-wrap">
+                                <img class="img-fluid" src="images/icon/avatar-01.jpg" alt="">
+                            </div>
+                            <div class="account-content">
+                                <button class="btn btn-none">John Doe
+                                    <i class="zmdi zmdi-chevron-down"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- ================== Header End ======================== -->
+            <!-- ================== Main Content Start ======================== -->
+            <div class="main-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="d-flex justify-content-between page-title-wrapper">
+                                <h1 class="page-title">Overview</h1>
+                                <div class="button-group">
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus-circle"></i>
+                                        Add Item
+                                    </button>
+                                    <button class="btn btn-secondary">
+                                        <i class="fas fa-download"></i>
+                                        Generate Report
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-lg-3 col-sm-12 col-md-6 mt-4">
+                            <div class="overview-item main-shadow">
+                                <div class="icon"><i class="fas fa-person-booth"></i></div>
+                                <div class="title">10368</div>
+                                <div class="text">members online</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-md-6 mt-4">
+                            <div class="overview-item main-shadow">
+                                <div class="icon"><i class="fas fa-person-booth"></i></div>
+                                <div class="title">10368</div>
+                                <div class="text">members online</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-md-6 mt-4">
+                            <div class="overview-item main-shadow">
+                                <div class="icon"><i class="fas fa-person-booth"></i></div>
+                                <div class="title">10368</div>
+                                <div class="text">members online</div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-12 col-md-6 mt-4">
+                            <div class="overview-item main-shadow">
+                                <div class="icon"><i class="fas fa-person-booth"></i></div>
+                                <div class="title">10368</div>
+                                <div class="text">members online</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 mt-4">
+                            <div class="card au-card main-shadow">
+                                <div class="au-card-inner">
+                                    <h3 class="au-card-title">Recent Report</h3>
+                                    <div class="chart-info d-flex align-items-center">
+                                        <span data-color="blue" class="dot mr-1"></span>
+                                        <span class="cart-info-title mr-4">Products</span>
+                                        <span data-color="green" class="dot mr-1"></span>
+                                        <span class="cart-info-title">Services</span>
+                                    </div>
+                                    <canvas id="recent-rep-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-4">
+                            <div class="card au-card main-shadow">
+                                <div class="au-card-inner">
+                                    <h3 class="au-card-title">Chart By %</h3>
+                                    <div class="chart-info d-flex align-items-center">
+                                        <span data-color="violet" class="dot mr-1"></span>
+                                        <span class="cart-info-title mr-4">Products</span>
+                                        <span data-color="red" class="dot mr-1"></span>
+                                        <span class="cart-info-title">Services</span>
+                                    </div>
+                                    <canvas id="recent-rep-chart"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ================== Main Content End ======================== -->
+        </main>
+        <!-- ================== Main End ======================== -->
+    </div>
+    <!-- ================== Page Wrapper ======================== -->
+
+    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <script src="vendor/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
