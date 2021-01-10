@@ -1,3 +1,44 @@
-@media (min-width: 768px) and (max-width: 980px) {
+/* =========== Smaller Than Medium Device ============*/
+@media screen and (max-width: 1000px) {
+    .search-form {
+        position: absolute;
+        z-index: 99999999;
+        top: 55px;
+        opacity: 0;
+        right: 0;
+        left: 0;
+    }
 
+    .search-form input {
+        width: 100%;
+    }
+
+    .btn-search-show {
+        display: block;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        z-index: 99999;
+        left: -500px;
+        width: 350px;
+    }
+
+    .btn-sidebar-toogle {
+        display: block;
+    }
+
+    main {
+        padding-left: 0;
+    }
+
+    .noti-wrap {
+        margin: 0;
+    }
 }
+
+/* =========== Only Medium Device ============*/
+@media (min-width: 768px) and (max-width: 1000px) {
+    
+}
+

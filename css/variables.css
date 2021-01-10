@@ -1,4 +1,6 @@
-.main-transition {
+.main-transition,
+button,
+input {
     -webkit-transition: all 0.3s ease;
     -o-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -17,4 +19,19 @@
 
 .btn {
     font-size: small;
+}
+
+.btn__primary {
+    background-color: var(--primary-color);
+    color: var(--primary-color-alt);
+    font-size: var(--small-font-size);
+}
+
+.btn__primary:focus,
+.btn-focus:focus {
+    box-shadow: 0 0 0px 2px var(--primary-color-light);
+}
+
+.js-dropdown-show {
+    opacity: 1 !important;
 }

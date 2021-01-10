@@ -10,18 +10,20 @@
     <link rel="stylesheet" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+
+    <script>
+        // window.addEventListener('DOMContentLoaded', (event) => {
+                
+        // });
+    </script>
 </head>
 <body>
-    
+    <div class="body-overlay main-transition"></div>
     <!-- ================== Page Wrapper ======================== -->
     <div id="wrapper">
         <!-- ================== SideBar Start ======================== -->
-        <ul class="navbar-nav">
+        <ul class="navbar-nav main-transition not-focus-close">
             <a class="navbar-brand w-100 main-shadow d-flex align-items-center justify-content-center" href="index.html">
-                <!-- <div class="navbar-brand-icon">
-                    <i class="fas mr-2 fa-laugh-wink"></i>
-                    COM ADMIN
-                </div> -->
                 <img class="img-fluid" src="images/icon/logo.png" />
             </a>
             <div class="navbar-link-wrapper js-scrollbar1 ps ps--active-y">
@@ -51,27 +53,33 @@
             <!-- ================== Header End ======================== -->
             <header class="main-shadow">
                 <div class="header-container d-flex align-items-center justify-content-between">
-                    <form action="index.html" class="search-form d-flex">
+                    <button class="btn btn-focus btn-sidebar-toogle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <form action="index.html" class="search-form d-flex js-search-modal main-transition">
                         <input type="text" placeholder="Search for datas & reports..." class="form-control">
-                        <button class="btn">
+                        <button class="btn btn__primary">
                             <i class="zmdi zmdi-search"></i>
                         </button>
                     </form>
                     <div class="header-button d-flex align-items-center">
+                        <button data-target="js-search-modal" class="btn btn-search-show btn-none js-dropdown-button">
+                            <i class="fas fa-search"></i>
+                        </button>
                         <div class="noti-wrap">
-                            <button class="btn btn-none">
+                            <button class="btn btn-none mt-2">
                                 <i class="zmdi zmdi-comment-more"></i>
                                 <span class="noti_quantity">2</span>
                             </button>
                         </div>
                         <div class="noti-wrap">
-                            <button class="btn btn-none">
+                            <button class="btn btn-none mt-2">
                                 <i class="zmdi zmdi-email"></i>
                                 <span class="noti_quantity">2</span>
                             </button>
                         </div>
                         <div class="noti-wrap">
-                            <button class="btn btn-none">
+                            <button class="btn btn-none mt-2">
                                 <i class="zmdi zmdi-notifications"></i>
                                 <span class="noti_quantity">2</span>
                             </button>

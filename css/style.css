@@ -71,6 +71,20 @@ a:hover {
     }
 }
 
+.body-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    background: #3333339c;
+    z-index: 9999;
+}
+
+.body-overlay.overlay-show {
+    display: block;
+}
 
 /* ===================== Nav bar ============== */
 .navbar-nav {
@@ -117,6 +131,10 @@ a:hover {
     color: var(--primary-color);
 }
 
+.navbar-show {
+    left: 0 !important;
+}
+
 /* ===================== Main ============== */
 main {
     padding-left: var(--sidebar-width);
@@ -128,8 +146,12 @@ main {
     padding: 0 30px;
 }
 
+.search-form {
+    position: relative;
+}
+
 .search-form input{
-    width: 300px;
+    width: 400px;
 }
 
 .search-form input::placeholder{
@@ -138,11 +160,36 @@ main {
 }
 
 .search-form button {
-    background: var(--primary-color);
+    padding: 0 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 37px;
 }
 
 .search-form button i {
+    font-size: 20px;
     color: var(--primary-color-alt);
+}
+
+.header-button {
+    position: absolute;
+    right: 0;
+}
+
+.btn-search-show {
+    display: none;
+    font-size: 15px;
+    color: var(--title-color);
+}
+
+.btn-sidebar-toogle {
+    color: var(--title-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 99999999;
+    display: none;
 }
 
 .noti-wrap {
