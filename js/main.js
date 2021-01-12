@@ -44,7 +44,8 @@
     dropdowns.each(function () {
       const targetDropdown = $(this).data("target");
       const element = $("." + targetDropdown)[0];
-      if (event.target !== element && event.target.parentNode !== element)
+
+      if (event.target !== element)
         $("." + targetDropdown).removeClass("js-dropdown-show not-focus-close");
     });
   };

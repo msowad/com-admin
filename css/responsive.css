@@ -23,7 +23,7 @@
     position: absolute;
     z-index: 99999;
     left: -500px;
-    width: 350px;
+    width: 340px;
   }
 
   .btn-sidebar-toogle {
@@ -43,6 +43,78 @@
 @media (min-width: 768px) and (max-width: 1000px) {
 }
 
-/* ==========Only small device */
+@media screen and (max-width: 768px) and (min-width: 455px) {
+  /* .js-noti-message:before {
+    left: 130px;
+  } */
+
+  .js-noti-mail:before,
+  .js-noti-message:before {
+    left: 143px;
+  }
+
+  .js-noti-alert:before {
+    left: 145px;
+  }
+}
+
+/* ==========Smaller than small device ======================*/
 @media screen and (max-width: 455px) {
+  .account-content {
+    display: none;
+  }
+}
+
+/*==================Only small device========*/
+@media (max-width: 455px) and (min-width: 341px) {
+  .account-img-wrap {
+    margin-right: 10px;
+  }
+
+  .js-noti-message {
+    right: -128px;
+  }
+
+  .js-noti-mail:before {
+    left: 189px;
+  }
+
+  .js-noti-mail {
+    right: -81px;
+  }
+
+  .js-noti-alert {
+    right: -45px;
+  }
+
+  .js-noti-alert:before {
+    left: 226px;
+  }
+}
+
+/* ==========Only smaller device */
+@media screen and (max-width: 340px) {
+  .js-noti-message {
+    right: -141px;
+  }
+
+  .js-noti-message:before {
+    left: 130px;
+  }
+
+  .js-noti-mail:before {
+    left: 166px;
+  }
+
+  .js-noti-mail {
+    right: -105px;
+  }
+
+  .js-noti-alert {
+    right: -65px;
+  }
+
+  .js-noti-alert:before {
+    left: 207px;
+  }
 }

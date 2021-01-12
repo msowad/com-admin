@@ -305,6 +305,10 @@ main {
   color: var(--title-color);
 }
 
+.account-wrap {
+  cursor: pointer;
+}
+
 .account-img-wrap {
   width: 50px;
 }
@@ -312,6 +316,21 @@ main {
 .account-img-wrap img {
   border-radius: 2px;
 }
+
+.account-content {
+  font-size: var(--small-font-size);
+}
+
+.account-content i {
+  position: absolute;
+  top: 4px;
+  right: -11px;
+}
+
+.account-name {
+  position: relative;
+}
+
 /* ===================== Main Content ============== */
 .main-content {
   padding: 40px 20px;
