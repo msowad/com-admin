@@ -1,37 +1,39 @@
 .main-transition,
 button,
 input {
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .main-shadow {
-    -webkit-box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);;
-    -moz-box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);;
-    box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);;
+  -webkit-box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);
 }
 
 .btn-none:focus {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .btn {
-    font-size: small;
+  font-size: small;
 }
 
 .btn__primary {
-    background-color: var(--primary-color);
-    color: var(--primary-color-alt);
-    font-size: var(--small-font-size);
+  background-color: var(--primary-color);
+  color: var(--primary-color-alt);
+  font-size: var(--small-font-size);
 }
 
 .btn__primary:focus,
 .btn-focus:focus {
-    box-shadow: 0 0 0px 2px var(--primary-color-light);
+  box-shadow: 0 0 0px 2px var(--primary-color-light);
 }
 
 .js-dropdown-show {
-    opacity: 1 !important;
+  opacity: 1 !important;
+  transform: scale(1) !important;
+  visibility: visible !important;
 }
