@@ -37,3 +37,16 @@ input {
   transform: scale(1) !important;
   visibility: visible !important;
 }
+
+.nice-scroll-bar-height::-webkit-scrollbar {
+  height: 7px;
+}
+
+.nice-scroll-bar-height::-webkit-scrollbar-thumb {
+  background: var(--secondery-color);
+  border-radius: 10px;
+}
+
+.nice-scroll-bar-height::-webkit-scrollbar-track {
+  background: var(--secondery-color-alt);
+}

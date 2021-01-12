@@ -238,17 +238,21 @@ main {
   z-index: 3;
 }
 
-.noti-details .card {
-  padding: 20px;
+.noti-details {
+  background: var(--primary-color-alt);
 }
 
-.noti-details .card .card-header {
-  text-align: center;
+.noti-details .noti-header {
   font-size: var(--smaller-font-size);
   color: var(--title-color);
-  margin-bottom: 15px;
+}
+
+.noti-details button {
+  width: 100%;
   background: transparent;
-  color: var(--primary-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  color: var(--title-color);
 }
 
 .noti-message {
@@ -305,10 +309,6 @@ main {
   color: var(--title-color);
 }
 
-.account-wrap {
-  cursor: pointer;
-}
-
 .account-img-wrap {
   width: 50px;
 }
@@ -329,6 +329,42 @@ main {
 
 .account-name {
   position: relative;
+}
+
+.profile-menu {
+  position: absolute;
+  z-index: 999999;
+  right: 25px;
+  top: 60px;
+  background: var(--primary-color-alt);
+  opacity: 0;
+  transform: scale(0.9);
+  visibility: hidden;
+}
+
+.profile-menu::before {
+  content: "";
+  display: block;
+  width: 19px;
+  height: 19px;
+  border-bottom: 9px solid #fff;
+  border-top: 9px solid transparent;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  position: absolute;
+  top: -17px;
+  left: 170px;
+  z-index: 3;
+}
+
+.profile-menu-container {
+  padding: 10px 0;
+  width: 200px;
+}
+
+.profile-menu-container .noti-message {
+  padding: 5px 20px;
+  margin-bottom: 0px;
 }
 
 /* ===================== Main Content ============== */
@@ -384,7 +420,40 @@ main {
   height: 12px;
   border-radius: 50%;
 }
-/* ===================== Main ============== */
+/* ===================== Table Earning ============== */
+.table-earning-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table-earning {
+  margin-bottom: 0;
+}
+
+.table-earning thead tr th,
+.table-earning tbody tr td {
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.table-earning tbody tr td {
+  color: var(--title-color);
+}
+
+.table-earning thead tr {
+  background: var(--secondery-color);
+  color: var(--secondery-color-alt);
+  border-radius: 10px;
+}
+
+.table-earning thead tr th {
+  font-size: var(--small-font-size);
+}
+
+.table-earning tbody tr {
+  background: var(--secondery-color-alt);
+}
 
 /* ===================== Main ============== */
 

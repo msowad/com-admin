@@ -42,9 +42,9 @@
   const closeDropdowns = (event) => {
     const dropdowns = $(".js-dropdown-button");
     dropdowns.each(function () {
-      const targetDropdown = $(this).data("target");
+      const that = $(this);
+      const targetDropdown = that.data("target");
       const element = $("." + targetDropdown)[0];
-
       if (event.target !== element && event.target.parentNode !== element)
         $("." + targetDropdown).removeClass("js-dropdown-show not-focus-close");
     });

@@ -44,10 +44,6 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 455px) {
-  /* .js-noti-message:before {
-    left: 130px;
-  } */
-
   .js-noti-mail:before,
   .js-noti-message:before {
     left: 143px;
@@ -62,6 +58,14 @@
 @media screen and (max-width: 455px) {
   .account-content {
     display: none;
+  }
+
+  .profile-menu {
+    top: 75px;
+  }
+
+  .profile-menu::before {
+    left: 170px;
   }
 }
 
@@ -95,26 +99,26 @@
 /* ==========Only smaller device */
 @media screen and (max-width: 340px) {
   .js-noti-message {
-    right: -141px;
+    right: -158px;
   }
 
   .js-noti-message:before {
-    left: 130px;
+    left: 114px;
   }
 
   .js-noti-mail:before {
-    left: 166px;
+    left: 155px;
   }
 
   .js-noti-mail {
-    right: -105px;
+    right: -116px;
   }
 
   .js-noti-alert {
-    right: -65px;
+    right: -80px;
   }
 
   .js-noti-alert:before {
-    left: 207px;
+    left: 193px;
   }
 }
