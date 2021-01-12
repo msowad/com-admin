@@ -45,7 +45,7 @@
       const targetDropdown = $(this).data("target");
       const element = $("." + targetDropdown)[0];
 
-      if (event.target !== element)
+      if (event.target !== element && event.target.parentNode !== element)
         $("." + targetDropdown).removeClass("js-dropdown-show not-focus-close");
     });
   };
