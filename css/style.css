@@ -2,15 +2,16 @@
 @import "variables.css";
 
 :root {
-  --primary-color: #ee0979;
+  --primary-color: #4272d7;
+  --primary-color-hard: #193f91;
+  --primary-color-light: #5184f1;
+
   --primary-color-alt: #fff;
   --primary-color-alt-hard: #f5f0f0;
   --secondery-color: #333;
   --title-color: #413e3e;
   --secondery-color-light: #a9b3c9;
   --secondery-color-alt: #fff;
-  --primary-color-hard: #b60e5f;
-  --primary-color-light: #f756a4;
 
   --biggest-font-size: 2.4rem;
   --bigger-font-size: 2.2rem;
@@ -23,7 +24,9 @@
   --font-bold: 700;
   --font-semi-bold: 400;
 
-  --transition: all 0.3s ease;
+  --transition: all 0.5s cubic-bezier(1, 0.18, 0.02, 0.87);
+
+  --main-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);
 
   --sidebar-width: 200px;
   --header-height: 70px;
@@ -78,13 +81,13 @@ a:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  display: none;
+  visibility: hidden;
   background: #3333339c;
   z-index: 9999;
 }
 
 .body-overlay.overlay-show {
-  display: block;
+  visibility: visible;
 }
 
 /* ===================== Nav bar ============== */
@@ -96,16 +99,18 @@ a:hover {
   bottom: 0;
   top: 0;
   overflow: auto;
+  z-index: 9999;
 }
 
 .navbar-brand {
   background-color: var(--secondery-color-alt);
   height: var(--header-height);
+  padding: 25px;
 }
 
 .navbar-link-wrapper {
   position: relative;
-  padding: 20px 10px;
+  padding: 20px 20px;
   height: calc(100vh - 75px);
 }
 
@@ -132,9 +137,17 @@ main {
 }
 
 /* ===================== Header ============== */
+header {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
+
 .header-container {
   height: var(--header-height);
-  padding: 0 30px;
+  padding: 0 30px 0 calc(var(--sidebar-width) + 30px);
+  background: var(--primary-color-alt-hard);
 }
 
 .search-form {
@@ -180,7 +193,10 @@ main {
   height: 40px;
   border-radius: 50%;
   z-index: 99999999;
+  position: absolute;
   display: none;
+  left: 8px;
+  top: 15px;
 }
 
 .noti-wrap {
@@ -369,7 +385,7 @@ main {
 
 /* ===================== Main Content ============== */
 .main-content {
-  padding: 40px 20px;
+  padding: calc(var(--header-height) + 40px) 20px 40px 20px;
 }
 
 .page-title {
@@ -452,7 +468,16 @@ main {
 }
 
 .table-earning tbody tr {
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  -moz-transition: var(--transition);
+  transition: var(--transition);
   background: var(--secondery-color-alt);
+}
+
+.table-earning tbody tr:hover {
+  background: var(--secondery-color-light);
 }
 
 /* ===================== Main ============== */

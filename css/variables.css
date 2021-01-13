@@ -1,16 +1,16 @@
 .main-transition,
 button,
 input {
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: var(--transition);
+  -o-transition: var(--transition);
+  -moz-transition: var(--transition);
+  transition: var(--transition);
 }
 
 .main-shadow {
-  -webkit-box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);
-  box-shadow: 0 0 5px 0px rgb(0, 0, 0, 0.2);
+  -webkit-box-shadow: var(--main-shadow);
+  -moz-box-shadow: var(--main-shadow);
+  box-shadow: var(--main-shadow);
 }
 
 .btn-none:focus {

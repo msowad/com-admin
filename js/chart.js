@@ -102,11 +102,12 @@
   const rc = $("#radar-chart");
   if (rc) {
     rc.height = 200;
-    new Chart(rc, {
+    var myChart = new Chart(rc, {
       type: "radar",
       data: {
         labels: [
-          ["Eating", "Dinner", "Drinking", "Water"],
+          ["Eating", "Dinner"],
+          ["Drinking", "Water"],
           "Sleeping",
           ["Designing", "Graphics"],
           "Coding",
@@ -116,17 +117,17 @@
         defaultFontFamily: "Poppins",
         datasets: [
           {
-            label: "My first dataset",
+            label: "My First dataset",
             data: [65, 59, 66, 45, 56, 55, 40],
             borderColor: "rgba(0, 123, 255, 0.6)",
-            borderWidth: 1,
+            borderWidth: "1",
             backgroundColor: "rgba(0, 123, 255, 0.4)",
           },
           {
-            label: "My second dataset",
+            label: "My Second dataset",
             data: [28, 12, 40, 19, 63, 27, 87],
-            borderColor: "rgba(0, 123, 255, 0.7)",
-            borderWidth: 1,
+            borderColor: "rgba(0, 123, 255, 0.7",
+            borderWidth: "1",
             backgroundColor: "rgba(0, 123, 255, 0.5)",
           },
         ],
@@ -139,13 +140,12 @@
           },
         },
         scale: {
-          tricks: {
+          ticks: {
             beginAtZero: true,
-            fontFalily: "Poppins",
+            fontFamily: "Poppins",
           },
         },
       },
     });
   }
-  console.log(rc);
 })(jQuery);

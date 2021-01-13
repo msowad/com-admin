@@ -28,15 +28,14 @@
 
   // Side Bar Toggle
   $(".btn-sidebar-toogle").on("click", function () {
+    $(this).focus();
     $(".navbar-nav").toggleClass("navbar-show");
     $(".body-overlay").toggleClass("overlay-show");
   });
 
-  // Dropdown
-  const dropdown = $(".js-dropdown-button");
-  dropdown.on("click", function () {
-    const targetDropdown = $(this).data("target");
-    $("." + targetDropdown).toggleClass("js-dropdown-show not-focus-close");
+  $(".body-overlay").on("click", function () {
+    $(".navbar-nav").removeClass("navbar-show");
+    $(".body-overlay").removeClass("overlay-show");
   });
 
   const closeDropdowns = (event) => {
@@ -45,8 +44,14 @@
       const that = $(this);
       const targetDropdown = that.data("target");
       const element = $("." + targetDropdown)[0];
-      if (event.target !== element && event.target.parentNode !== element)
+      if (event.target === that[0] || event.target.parentElement === that[0]) {
+        $("." + targetDropdown).toggleClass("js-dropdown-show not-focus-close");
+      } else if (
+        event.target !== element &&
+        event.target.parentElement !== element
+      ) {
         $("." + targetDropdown).removeClass("js-dropdown-show not-focus-close");
+      }
     });
   };
 

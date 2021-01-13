@@ -25,7 +25,10 @@
     <div id="wrapper">
         <!-- ================== SideBar Start ======================== -->
         <ul class="navbar-nav main-transition not-focus-close">
-            <a class="navbar-brand w-100 main-shadow d-flex align-items-center justify-content-center"
+            <button class="btn btn-focus btn-sidebar-toogle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <a class="main-transition navbar-brand w-100 main-shadow d-flex align-items-center justify-content-center"
                 href="index.html">
                 <img class="img-fluid" src="images/icon/logo.png" />
             </a>
@@ -249,14 +252,12 @@
                             </div>
                         </div>
                         <div class="account-details-wrap">
-                            <button data-target="profile-menu"
-                                class="account-wrap btn btn-none js-dropdown-button ml-4 d-flex align-items-center">
-                                <div class="account-img-wrap">
+                            <button class="account-wrap btn btn-none d-flex align-items-center">
+                                <div data-target="profile-menu" class="js-dropdown-button account-img-wrap">
                                     <img class="img-fluid" src="images/icon/avatar-01.jpg" alt="">
                                 </div>
-                                <div class="account-content mr-4 ml-2">
+                                <div class="account-content ml-2">
                                     <span class="account-name">John Doe
-                                        <i class="zmdi zmdi-chevron-down"></i>
                                     </span>
                                 </div>
                             </button>
@@ -289,11 +290,11 @@
 
                                 <h1 class="page-title">Overview</h1>
                                 <div class="button-group">
-                                    <button class="btn btn-primary">
+                                    <button class="btn btn-sm btn-primary">
                                         <i class="fas fa-plus-circle"></i>
                                         Add Item
                                     </button>
-                                    <button class="btn btn-secondary">
+                                    <button class="btn btn-sm btn-secondary">
                                         <i class="fas fa-download"></i>
                                         Generate Report
                                     </button>
@@ -351,12 +352,12 @@
                                 <div class="au-card-inner">
                                     <h3 class="au-card-title">Radar Chart</h3>
                                     <div class="chart-info d-flex align-items-center">
-                                        <span data-color="violet" class="dot mr-1"></span>
+                                        <span data-color="#e645e6" class="dot mr-1"></span>
                                         <span class="cart-info-title mr-4">Products</span>
-                                        <span data-color="red" class="dot mr-1"></span>
+                                        <span data-color="#ff0000" class="dot mr-1"></span>
                                         <span class="cart-info-title">Services</span>
                                     </div>
-                                    <canvas id="radar-chart"></canvas>
+                                    <canvas id="radar-chart" class="mt-4"></canvas>
                                 </div>
                             </div>
                         </div>

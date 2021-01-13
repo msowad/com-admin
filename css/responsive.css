@@ -1,5 +1,9 @@
 /* =========== Smaller Than Medium Device ============*/
 @media screen and (max-width: 1000px) {
+  .header-container {
+    padding: 0 30px 0 30px;
+  }
+
   .search-form {
     position: absolute;
     z-index: 99999999;
@@ -20,10 +24,7 @@
   }
 
   .navbar-nav {
-    position: absolute;
-    z-index: 99999;
     left: -500px;
-    width: 340px;
   }
 
   .btn-sidebar-toogle {
@@ -37,13 +38,17 @@
   .noti-wrap {
     margin: 0;
   }
+
+  .navbar-brand {
+    padding: 28px 12px 25px 55px;
+  }
 }
 
 /* =========== Only Medium Device ============*/
 @media (min-width: 768px) and (max-width: 1000px) {
 }
 
-@media screen and (max-width: 768px) and (min-width: 455px) {
+@media screen and (max-width: 768px) and (min-width: 490px) {
   .js-noti-mail:before,
   .js-noti-message:before {
     left: 143px;
@@ -55,7 +60,7 @@
 }
 
 /* ==========Smaller than small device ======================*/
-@media screen and (max-width: 455px) {
+@media screen and (max-width: 490px) {
   .account-content {
     display: none;
   }
@@ -70,11 +75,7 @@
 }
 
 /*==================Only small device========*/
-@media (max-width: 455px) and (min-width: 341px) {
-  .account-img-wrap {
-    margin-right: 10px;
-  }
-
+@media (max-width: 490px) and (min-width: 341px) {
   .js-noti-message {
     right: -128px;
   }
