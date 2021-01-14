@@ -38,7 +38,7 @@
     $(".body-overlay").removeClass("overlay-show");
   });
 
-  const closeDropdowns = (event) => {
+  /* const closeDropdowns = (event) => {
     const dropdowns = $(".js-dropdown-button");
     dropdowns.each(function () {
       const that = $(this);
@@ -53,7 +53,7 @@
         $("." + targetDropdown).removeClass("js-dropdown-show not-focus-close");
       }
     });
-  };
+  }; */
 
   // Close dropdowns on click body
   $(window).on("mouseup", function (event) {
